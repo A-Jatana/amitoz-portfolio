@@ -11,32 +11,44 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1, 
-            src: courseAssist
+            src: courseAssist,
+            demo: 'https://youtu.be/EwwslcNDgYg',
+            code: 'https://github.com/A-Jatana/Course-Assist-Application'
         
         },
         {
             id: 2, 
-            src: hungryOgre
+            src: hungryOgre,
+            demo: 'https://utoronto.zoom.us/rec/share/P7vpCaMfyBZFzZWp_xdaqbJ9paqYC9AwHx9dVkoKe4Uzb2kwCVQuKygFRerdxFfi.f2sxs2Us5KvGdzj5',
+            code: 'https://github.com/A-Jatana/Hungry-Ogre-Game'
         
         },
         {
             id: 3, 
-            src: systemTool
+            src: systemTool,
+            demo: 'https://youtu.be/lw0haCv3KHQ',
+            code: 'https://github.com/A-Jatana/SystemMonitoringTool'
         
         },
         {
             id: 4, 
-            src: toDoList
+            src: toDoList,
+            demo: 'https://youtu.be/lw0haCv3KHQ',
+            code: 'https://github.com/A-Jatana/To-Do-List-Website'
         
         },
         {
             id: 5, 
-            src: installNode
+            src: installNode,
+            demo: 'https://youtu.be/lw0haCv3KHQ',
+            code: 'https://github.com/A-Jatana/Course-Assist-Application'
         
         },
         {
             id: 6, 
-            src: reactWeather
+            src: reactWeather,
+            demo: 'https://youtu.be/lw0haCv3KHQ',
+            code: 'https://github.com/A-Jatana/Course-Assist-Application'
         
         },
 
@@ -53,12 +65,26 @@ const Portfolio = () => {
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
             
-                {portfolios.map(({ id, src }) => (  
+                {portfolios.map(({ id, src, demo, code }) => (  
                     <div key={id}className="shadow-md shadow-gray-600 rounded-lg">
                         <img src={src} alt="" className="rounded-md duration-200 hover:scale-105"/>
                         <div className="flex items-center justify-center">
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>   
+                            <button 
+                                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                                onClick={() => window.open(demo)}
+                                type="button"
+                                target="_blank" 
+                                rel="noreferrer">
+                                Demo
+                                </button>
+                            <button 
+                                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                                onClick={() => window.open(code)}
+                                type="button"
+                                target="_blank" 
+                                rel="noreferrer">
+                                Code
+                                </button>   
                         </div>
                     </div>
                     ))
