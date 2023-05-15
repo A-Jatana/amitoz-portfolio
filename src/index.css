@@ -12,4 +12,7 @@
     /* entire html is using this font */
     font-family: 'Raleway', sans-serif;
   }
+  .experience-title {
+    margin-top: 50px;
+  }
 }
