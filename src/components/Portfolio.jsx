@@ -37,20 +37,6 @@ const Portfolio = () => {
             code: 'https://github.com/A-Jatana/To-Do-List-Website'
         
         },
-        {
-            id: 5, 
-            src: installNode,
-            demo: 'https://youtu.be/lw0haCv3KHQ',
-            code: 'https://github.com/A-Jatana/Course-Assist-Application'
-        
-        },
-        {
-            id: 6, 
-            src: reactWeather,
-            demo: 'https://youtu.be/lw0haCv3KHQ',
-            code: 'https://github.com/A-Jatana/Course-Assist-Application'
-        
-        },
 
     ]
 
@@ -62,8 +48,35 @@ const Portfolio = () => {
                 <p className="py-6">Check out some of my work right here</p>
             </div>
 
+            <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
+                {portfolios.map(({ id, src, demo, code }) => (  
+                    <div key={id} className="shadow-md shadow-gray-600 rounded-lg overflow-hidden">
+                    <img src={src} alt="" className="h-64 object-fit-cover duration-200 hover:scale-105"/>
+                    <div className="flex items-center justify-center">
+                        <button 
+                        className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                        onClick={() => window.open(demo)}
+                        type="button"
+                        target="_blank" 
+                        rel="noreferrer"
+                        >
+                        Demo
+                        </button>
+                        <button 
+                        className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                        onClick={() => window.open(code)}
+                        type="button"
+                        target="_blank" 
+                        rel="noreferrer"
+                        >
+                        Code
+                        </button>   
+                    </div>
+                    </div>
+                ))}
+                </div>
 
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+            {/* <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
             
                 {portfolios.map(({ id, src, demo, code }) => (  
                     <div key={id}className="shadow-md shadow-gray-600 rounded-lg">
@@ -84,6 +97,7 @@ const Portfolio = () => {
                                 target="_blank" 
                                 rel="noreferrer">
                                 Code
+
                                 </button>   
                         </div>
                     </div>
@@ -92,7 +106,7 @@ const Portfolio = () => {
 
                 }
 
-            </div>
+            </div> */}
     
         </div>
     </div>
