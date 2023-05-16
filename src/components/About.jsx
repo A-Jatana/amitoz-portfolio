@@ -9,13 +9,17 @@ const About = () => {
             </div>
 
             <p className="text-xl mt-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quibusdam sit quasi, asperiores commodi neque minima! Quos blanditiis dolorum iusto facere eos ipsa placeat optio, modi impedit nesciunt perspiciatis sapiente reprehenderit vitae quia inventore porro est corrupti explicabo? Doloremque alias veniam atque aliquam animi reiciendis placeat consectetur nisi minus praesentium?
+                I am a third year Computer Science student at the University of Toronto, specializing in Software Engineering. I am always looking for opportunities to learn and grow, as I am a believer in the idea that
+                knowledge is power and continuous self-improvement is key to personal and professional success. Whether it's exploring new technologies, acquiring new skills, or seeking out new challenges, I approach 
+                every opportunity with enthusiasm and a willingness to learn. 
             </p>
 
             <br />
 
             <p className="text-xl">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quis, ratione delectus nesciunt dolorem magnam non. Maiores, soluta numquam sed minus eum consequatur rerum, ipsa delectus autem recusandae non facilis est fugit magni et voluptate. Maiores, dolor hic. Non, corporis nesciunt! Officiis debitis unde quis cumque, voluptatum maiores iure aspernatur!
+                I love problem-solving, researching emerging technologies, and contributing to a team-oriented environment. My experience in programming languages such as C, Python, Java, JavaScript, HTML, and CSS, 
+                as well as my familiarity with various data structures, object-oriented programming, design patterns, software testing, agile techniques, and mobile application development, has given me a broad foundation
+                to build upon. Beyond the world of Computer Science, I enjoy spending time outdoors and often go on long hikes in the nature to unwind. I also enjoy playing sports, especially tennis and basketball. 
             </p>
         </div>
         
