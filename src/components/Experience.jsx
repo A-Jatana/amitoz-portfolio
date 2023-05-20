@@ -93,8 +93,8 @@ const Experience = () => {
     <div name='skills' className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen py-20">
         <div className="max-w-screen-lg mx-auto p-4  text-white">
             <div className="pt-12 pb-8">
-            <p className="text-4xl font-bold border-b-4 border-gray-500 inline">Skills</p>
-            <p className="py-6">These are the technologies I've worked with</p>
+                <p className="text-4xl font-bold border-b-4 border-gray-500 inline">Skills</p>
+                <p className="py-6">These are the technologies I've worked with</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {techs.map(({ id, src, title, style }) => (
