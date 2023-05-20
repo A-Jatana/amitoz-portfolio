@@ -2,7 +2,7 @@ import React from 'react'
 import courseAssist from '../assets/portfolio/course_assist_app.png'
 import systemTool from '../assets/portfolio/system_monitoring_tool_linux.png'
 import hungryOgre from '../assets/portfolio/hungry_ogre_assembly.png'
-import personalPortfolio from '../assets/portfolio/personal_portfolio_ss.png'
+import personalPortfolio from '../assets/portfolio/portfolio_website_ss.png'
 
 const Portfolio = () => {
 
@@ -31,8 +31,8 @@ const Portfolio = () => {
         {
             id: 4, 
             src: personalPortfolio,
-            demo: 'https://www.youtube.com/watch?v=susewRC7_Dw',
-            code: 'https://github.com/A-Jatana/To-Do-List-Website'
+            demo: 'https://www.youtube.com/watch?v=caIj5vt0tv4',
+            code: 'https://github.com/A-Jatana/amitoz-portfolio'
         
         },
 
