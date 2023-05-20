@@ -3,7 +3,7 @@ import courseAssist from '../assets/portfolio/course_assist_app.png'
 import installNode from '../assets/portfolio/installNode.jpg'
 import systemTool from '../assets/portfolio/system_monitoring_tool_linux.png'
 import hungryOgre from '../assets/portfolio/hungry_ogre_assembly.png'
-import toDoList from '../assets/portfolio/to_do_list_web.png'
+import personalPortfolio from '../assets/portfolio/personal_portfolio_ss.png'
 import reactWeather from '../assets/portfolio/reactWeather.jpg'
 
 const Portfolio = () => {
@@ -32,7 +32,7 @@ const Portfolio = () => {
         },
         {
             id: 4, 
-            src: toDoList,
+            src: personalPortfolio,
             demo: 'https://www.youtube.com/watch?v=susewRC7_Dw',
             code: 'https://github.com/A-Jatana/To-Do-List-Website'
         
@@ -41,14 +41,14 @@ const Portfolio = () => {
     ]
 
     return (
-        <div name='portfolio' className="bg-gradient-to-b from-black to-gray-800 w-full text-white min-h-screen py-20">
+        <div name='projects' className="bg-gradient-to-b from-black to-gray-800 w-full text-white min-h-screen py-20">
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
-                    <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
+                    <p className="text-4xl font-bold inline border-b-4 border-gray-500">Projects</p>
                     <p className="py-6">Check out some of my work right here</p>
                 </div>
     
-                <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-4 md:px-0">
+                <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-4 md:px-0">
                     {portfolios.map(({ id, src, demo, code }) => (  
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg overflow-hidden">
                             <img src={src} alt="" className="h-64 object-fit-cover duration-200 hover:scale-105"/>

@@ -13,8 +13,8 @@ const Home = () => {
             <div className="flex flex-col justify-center h-full">
                 <h2 className="text-4xl sm:text-7xl font-bold text-white">Hello! My name is Amitoz Jatana</h2>
                 <p className="text-gray-500 py-4 max-w-md">
-                    Welcome to my portfolio! Here, you'll find a showcase of my skills and projects. I hope my portfolio gives you a glimpse into my
-                    passion for technology and innovation. Thank you for visiting!
+                    Welcome to my portfolio! Here, you'll find a showcase of my skills and projects. I hope my portfolio 
+                    gives you a glimpse into my passion for technology and innovation. Thank you for visiting!
                     
                 </p>
 
