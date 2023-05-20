@@ -44,7 +44,7 @@ const SocialLinks = () => {
                 Resume <BsFillPersonLinesFill size={30}/>
                 </> 
             ), 
-            href: '/Amitoz Jatana Resume.pdf',
+            href: '/Resume (Amitoz Jatana).pdf',
             style: 'rounded-bl-md',
             download: true, 
             
