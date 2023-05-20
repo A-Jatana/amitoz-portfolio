@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/amitoz-portfolio/static/css/main.a210b2da.css",
+    "main.js": "/amitoz-portfolio/static/js/main.1a3a80dc.js",
+    "static/media/system_monitoring_tool_linux.png": "/amitoz-portfolio/static/media/system_monitoring_tool_linux.961153dea27e8f940b0f.png",
+    "static/media/firebase_logo.png": "/amitoz-portfolio/static/media/firebase_logo.6f1a1b336c5d7f5b6a79.png",
+    "static/media/portfolio_website_ss.png": "/amitoz-portfolio/static/media/portfolio_website_ss.90b14d32350e45ee00f0.png",
+    "static/media/python_logo_trans.png": "/amitoz-portfolio/static/media/python_logo_trans.52d7bb207f9868b90e39.png",
+    "static/media/course_assist_app.png": "/amitoz-portfolio/static/media/course_assist_app.43d9ff06f3508baf0873.png",
+    "static/media/hungry_ogre_assembly.png": "/amitoz-portfolio/static/media/hungry_ogre_assembly.3158bcdaf1b4af78219f.png",
+    "static/media/newImage.jpg": "/amitoz-portfolio/static/media/newImage.a6076219b88d63301168.jpg",
+    "static/media/react.png": "/amitoz-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/android studio.png": "/amitoz-portfolio/static/media/android studio.554010a1e1fe637c1f47.png",
+    "static/media/linux_logo.png": "/amitoz-portfolio/static/media/linux_logo.24a26a2ec29c2e987464.png",
+    "static/media/C_logo_trans.png": "/amitoz-portfolio/static/media/C_logo_trans.bbbbbabc8c191bfb99bf.png",
+    "static/media/github.png": "/amitoz-portfolio/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/amitoz-portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/amitoz-portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/amitoz-portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/amitoz-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/java_logo.png": "/amitoz-portfolio/static/media/java_logo.6c64373d3b7415758078.png",
+    "index.html": "/amitoz-portfolio/index.html",
+    "main.a210b2da.css.map": "/amitoz-portfolio/static/css/main.a210b2da.css.map",
+    "main.1a3a80dc.js.map": "/amitoz-portfolio/static/js/main.1a3a80dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a210b2da.css",
+    "static/js/main.1a3a80dc.js"
+  ]
+}
