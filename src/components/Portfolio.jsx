@@ -3,6 +3,7 @@ import courseAssist from '../assets/portfolio/course_assist_app.png'
 import systemTool from '../assets/portfolio/system_monitoring_tool_linux.png'
 import hungryOgre from '../assets/portfolio/hungry_ogre_assembly.png'
 import personalPortfolio from '../assets/portfolio/portfolio_website_ss.png'
+import toDoList from '../assets/portfolio/to_do_list_pic.png'
 
 const Portfolio = () => {
 
@@ -35,6 +36,12 @@ const Portfolio = () => {
             code: 'https://github.com/A-Jatana/amitoz-portfolio'
         
         },
+        {
+            id: 5,
+            src: toDoList,
+            demo: 'https://www.youtube.com/watch?v=susewRC7_Dw',
+            code: 'https://github.com/A-Jatana/To-Do-List-Website'
+        }
 
     ]
 
