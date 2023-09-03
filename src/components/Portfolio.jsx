@@ -4,40 +4,47 @@ import systemTool from '../assets/portfolio/system_monitoring_tool_linux.png'
 import hungryOgre from '../assets/portfolio/hungry_ogre_assembly.png'
 import personalPortfolio from '../assets/portfolio/portfolio_website_ss.png'
 import toDoList from '../assets/portfolio/to_do_list_pic.png'
+import passionPals from '../assets/portfolio/passionpalsSS2.png'
 
 const Portfolio = () => {
 
     const portfolios = [
         {
-            id: 1, 
+            id: 1,
+            src: passionPals,
+            demo: 'https://www.youtube.com/watch?v=Ef_Qj6rHB5I',
+            code: 'https://github.com/CSCC012023/final-project-s23-passion-pals'
+        },
+        {
+            id: 2, 
             src: courseAssist,
             demo: 'https://youtu.be/EwwslcNDgYg',
             code: 'https://github.com/A-Jatana/Course-Assist-Application'
         
         },
         {
-            id: 2, 
+            id: 3, 
             src: hungryOgre,
             demo: 'https://utoronto.zoom.us/rec/share/P7vpCaMfyBZFzZWp_xdaqbJ9paqYC9AwHx9dVkoKe4Uzb2kwCVQuKygFRerdxFfi.f2sxs2Us5KvGdzj5',
             code: 'https://github.com/A-Jatana/Hungry-Ogre-Game'
         
         },
         {
-            id: 3, 
+            id: 4, 
             src: systemTool,
             demo: 'https://youtu.be/lw0haCv3KHQ',
             code: 'https://github.com/A-Jatana/SystemMonitoringTool'
         
         },
         {
-            id: 4, 
+            id: 5, 
             src: personalPortfolio,
             demo: 'https://www.youtube.com/watch?v=caIj5vt0tv4',
             code: 'https://github.com/A-Jatana/amitoz-portfolio'
         
         },
         {
-            id: 5,
+            id: 6,
             src: toDoList,
             demo: 'https://www.youtube.com/watch?v=susewRC7_Dw',
             code: 'https://github.com/A-Jatana/To-Do-List-Website'
