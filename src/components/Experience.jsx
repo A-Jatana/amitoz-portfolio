@@ -1,113 +1,62 @@
 import React from 'react'
-import html from '../assets/html.png'
-import css from '../assets/css.png'
-import javascript from '../assets/javascript.png'
-import reactImage from '../assets/react.png'
-import pythonImage from '../assets/python_logo_trans.png'
-import javaImage from '../assets/java_logo.png'
-import github from '../assets/github.png'
-import tailwind from '../assets/tailwind.png'
-import cLogo from '../assets/C_logo_trans.png'
-import androidStdio from '../assets/android studio.png'
-import firebase from '../assets/firebase_logo.png'
-import linux from '../assets/linux_logo.png'
+import TBS from '../assets/TBS-logo.png'
+import TBSHoliday from '../assets/TBS-Holiday-Pic.jpeg'
 
-const Experience = () => {
+function Experience() {
 
-    const techs = [
+    const ExperienceItem = ({ src, title, company, date, desc1, desc2, desc3, img1, img2 }) => (
+        <div className="flex flex-col md:flex-row justify-between mb-8">
+            <div className="flex flex-col w-full md:w-1/2">
+                <div className="mb-4">
+                    <p className="text-2xl">{title}</p>
+                    <p className="text-xl font-bold">{company}</p>
+                    {/* <p className="text-xl">{date}</p> */}
+                    {/* <p className="text-xl">Responsibilities:</p> */}
+                    <br/>
+                    <p className="text-lg">{desc1}</p>
+                    <br/>
+                    <p className="text-lg">{desc2}</p>
+                    <br/>
+                    <p className="text-lg">{desc3}</p>
+                </div>
+            </div>
+
+            <div className="flex w-full md:w-1/2 flex-col items-center">
+                <img src={img1} alt="" className="w-1/2 h-auto mb-4 mt-12" />
+                <img src={img2} alt="" className="w-4/5 h-auto" />
+            </div>
+            
+        </div>
+    );
+
+    const experiences = [
         {
-            id: 1, 
-            src: html, 
-            title: 'HTML', 
-            style: 'shadow-red-500'
-        },
-        {
-            id: 2, 
-            src: css, 
-            title: 'CSS', 
-            style: 'shadow-blue-500'
-        },
-        {
-            id: 3, 
-            src: javascript, 
-            title: 'JavaScript', 
-            style: 'shadow-yellow-500'
-        },
-        {
-            id: 4, 
-            src: reactImage, 
-            title: 'React', 
-            style: 'shadow-blue-400'
-        },
-        {
-            id: 5, 
-            src: tailwind, 
-            title: 'Tailwind', 
-            style: 'shadow-blue-900'
-        },
-        {
-            id: 6, 
-            src: pythonImage, 
-            title: 'Python', 
-            style: 'shadow-yellow-400'
-        },
-        {
-            id: 7, 
-            src: javaImage, 
-            title: 'Java', 
-            style: 'shadow-red-500'
-        },
-        {
-            id: 8, 
-            src: cLogo, 
-            title: 'C', 
-            style: 'shadow-blue-500'
-        },
-        {
-            id: 9, 
-            src: github, 
-            title: 'GitHub', 
-            style: 'shadow-gray-700'
-        },
-        {
-            id: 9, 
-            src: androidStdio, 
-            title: 'Android Studio', 
-            style: 'shadow-green-500'
-        },
-        {
-            id: 10, 
-            src: firebase, 
-            title: 'Firebase', 
-            style: 'shadow-yellow-500'
-        },
-        {
-            id: 11, 
-            src: linux, 
-            title: 'Linux', 
-            style: 'shadow-gray-900'
+            id: 1,
+            img1: TBS,
+            img2: TBSHoliday,
+            title: 'Web Developer',
+            company: 'Treasury Board Secretariat',
+            date: 'September 2023 - December 2023',
+            desc1: 'During my work term, our team focused on enhancing the Financial Management Gateway (FMG), a virtual hub for the OPS finance community, with over 22,000 annual visitors. Our primary project involved creating the Performance Management Tool (PMT) within FMG, simplifying user enrollment in finance-related courses and events.',
+            desc2: ' Collaborating closely with the full-time developer, I designed user-friendly web pages for each PMT component, leveraging my React, HTML, CSS, and JavaScript knowledge. Additionally, we migrated the database from Microsoft SharePoint to an SQL-based database, where I implemented robust CRUD functions for each component using the SQL database API, resulting in a notable 35% efficiency gain. ',
+            desc3: 'Near the end of my work term, I conducted rigorous manual testing and implemented Jest unit testing to ensure resilience and reliability. Throughout the development lifecycle, I effectively utilized Git version control within Azure DevOps, actively managing 50+ pull requests/branches to foster seamless collaboration. ',
+            AIdescription: 'Developed a web application using React, JavaScript, HTML, and CSS to help users find and access government services and information. Worked in an agile environment and collaborated with a team of developers, designers, and product managers to deliver a high-quality product. ',
         },
     ]
 
   return (
-    <div name='skills' className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen py-20">
-        <div className="max-w-screen-lg mx-auto p-4  text-white">
-            <div className="pt-12 pb-8">
-                <p className="text-4xl font-bold border-b-4 border-gray-500 inline">Skills</p>
-                <p className="py-6">These are the technologies I've worked with</p>
+    <div name="experience" className="w-full min-h-screen py-20 bg-gradient-to-b from-black to-gray-800 text-white">
+        <div className="max-w-screen-lg mx-auto p-4 text-white">
+            <div className="pt-16 pb-8">
+                <p className="text-4xl font-bold border-b-4 border-gray-500 inline">Experience</p>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-            {techs.map(({ id, src, title, style }) => (
-                <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                <img src={src} alt={title} className="w-20 mx-auto"/>
-                <p className="mt-4">{title}</p>
-                </div>
+
+            {experiences.map((experience) => (
+                <ExperienceItem key={experience.id} {...experience} />
             ))}
-            </div>
         </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Experience
+export default Experience;

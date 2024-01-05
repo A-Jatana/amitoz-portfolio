@@ -6,7 +6,7 @@ import personalPortfolio from '../assets/portfolio/portfolio_website_ss.png'
 import toDoList from '../assets/portfolio/to_do_list_pic.png'
 import passionPals from '../assets/portfolio/passionpalsSS2.png'
 
-const Portfolio = () => {
+const Projects = () => {
 
     const portfolios = [
         {
@@ -53,7 +53,7 @@ const Portfolio = () => {
     ]
 
     return (
-        <div name='projects' className="bg-gradient-to-b from-black to-gray-800 w-full min-h-screen py-20">
+        <div name='projects' className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen py-20">
             <div className="max-w-screen-lg mx-auto p-4  text-white">
                 <div className="pt-16 pb-8">
                     <p className="text-4xl font-bold border-b-4 border-gray-500 inline">Projects</p>
@@ -93,4 +93,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Projects
