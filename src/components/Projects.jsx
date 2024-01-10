@@ -3,8 +3,9 @@ import courseAssist from '../assets/portfolio/course_assist_app.png'
 import systemTool from '../assets/portfolio/system_monitoring_tool_linux.png'
 import hungryOgre from '../assets/portfolio/hungry_ogre_assembly.png'
 import personalPortfolio from '../assets/portfolio/portfolio_website_ss.png'
-import toDoList from '../assets/portfolio/to_do_list_pic.png'
+// import toDoList from '../assets/portfolio/to_do_list_pic.png'
 import passionPals from '../assets/portfolio/passionpalsSS2.png'
+import faceRecognizer from '../assets/portfolio/face_recognizer_pic.png'
 
 const Projects = () => {
 
@@ -27,28 +28,33 @@ const Projects = () => {
             src: hungryOgre,
             demo: 'https://utoronto.zoom.us/rec/share/P7vpCaMfyBZFzZWp_xdaqbJ9paqYC9AwHx9dVkoKe4Uzb2kwCVQuKygFRerdxFfi.f2sxs2Us5KvGdzj5',
             code: 'https://github.com/A-Jatana/Hungry-Ogre-Game'
-        
         },
         {
-            id: 4, 
+            id: 4,
+            src: faceRecognizer,
+            demo: 'https://youtu.be/6zns23ythJ4',
+            code: 'https://github.com/A-Jatana/Face-Recognizer' 
+        },
+        {
+            id: 5, 
             src: systemTool,
             demo: 'https://youtu.be/lw0haCv3KHQ',
             code: 'https://github.com/A-Jatana/SystemMonitoringTool'
         
         },
         {
-            id: 5, 
+            id: 6, 
             src: personalPortfolio,
             demo: 'https://www.youtube.com/watch?v=caIj5vt0tv4',
             code: 'https://github.com/A-Jatana/amitoz-portfolio'
         
         },
-        {
-            id: 6,
-            src: toDoList,
-            demo: 'https://www.youtube.com/watch?v=susewRC7_Dw',
-            code: 'https://github.com/A-Jatana/To-Do-List-Website'
-        }
+        // {
+        //     id: 7,
+        //     src: toDoList,
+        //     demo: 'https://www.youtube.com/watch?v=susewRC7_Dw',
+        //     code: 'https://github.com/A-Jatana/To-Do-List-Website'
+        // }
 
     ]
 
