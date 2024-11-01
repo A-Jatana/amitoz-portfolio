@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
@@ -50,6 +50,27 @@ const SocialLinks = () => {
             
         }, 
     ]
+
+    const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 300) {
+            setShowScrollToTop(true);
+        } else {
+            setShowScrollToTop(false);
+        }
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
         <ul>
@@ -73,6 +94,14 @@ const SocialLinks = () => {
 
            
         </ul>
+        {showScrollToTop && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-10 right-10 bg-gray-500 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition duration-300"
+                >
+                    ↑
+                </button>
+            )}
     </div>
   )
 }

@@ -34,7 +34,7 @@ const NavBar = () => {
     ]
   return (
     // if you want the navbar to move as you scroll, remove the fixed class
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black">
         <div>
             <h1 className="text-5xl font-signature ml-2">Amitoz</h1>
         </div>
