@@ -50,12 +50,12 @@ function Experience() {
             id: 1, 
             img1: RBC,
             img2: RBCSummerFest,
-            title: 'DevOps Developer',
+            title: 'Software Developer',
             company: 'RBC',
             date: 'May 2024 - Present',
-            desc1: 'As a DevOps Developer at RBC, I played a key role in enhancing operational efficiency and reliability. I developed a Python automation script with AWS Glue to transfer Postman audit logs to an S3 bucket, ensuring compliance with data retention policies and eliminating data loss risks.',
-            desc2: 'To improve incident analysis, I automated the collection of uptime and downtime metrics from Catchpoint into ElasticSearch, To improve incident analysis, I automated the integration of uptime and downtime metrics from Catchpoint into ElasticSearch, categorizing outages based on maintenance schedules. I also stepped into a leadership role in the absence of our QA Lead, where I led automation testing for over 15 DevOps pipeline tools, achieving 90% test coverage to ensure stability across production and non-production environments.',
-            desc3: 'Additionally, I introduced automation solutions to replace manual tasks, saving 20+ hours per month and significantly improving reporting accuracy, efficiency, and resilience in our DevOps operations.'
+            desc1: 'As a Software Developer at RBC, I played a key role in automating security and compliance workflows to enhance operational efficiency. I implemented a seamless vendor binary validation process by running a Dockerized malware scanning tool within GitHub Actions, integrating AWS Lambda for automation, S3 for secure storage, and IAM roles for access control.',
+            desc2: 'To support enterprise data retention standards, I developed a Python script leveraging AWS Glue to transmit audit logs from Postman to an S3 bucket, ensuring long-term storage and eliminating data loss risks. I also led QA testing efforts for over 15 DevOps tools, utilizing Selenium and PyTest to manage test suites and maintain system stability across production and non-production environments.',
+            desc3: 'Additionally, I designed automation solutions to replace manual DevOps tasks, saving over 20 hours per month while improving reporting accuracy, efficiency, and resilience in our operations.'
         },
         {
             id: 2,

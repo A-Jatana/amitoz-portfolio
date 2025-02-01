@@ -9,7 +9,7 @@ const About = () => {
             </div>
 
             <p className="text-xl mt-5">
-                I am a third year Computer Science student at the University of Toronto, specializing in Software Engineering. I am always looking for opportunities to learn and grow, as I am a believer in the idea that
+                I am a fourth year Computer Science student at the University of Toronto, specializing in Software Engineering. I am always looking for opportunities to learn and grow, as I am a believer in the idea that
                 knowledge is power and continuous self-improvement is key to personal and professional success. Whether it's exploring new technologies, acquiring new skills, or seeking out new challenges, I approach 
                 every opportunity with enthusiasm and a willingness to learn. 
             </p>
